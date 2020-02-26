@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-if(fs.existsSync('new')) {
+if(fs.existsSync(path.join(__dirname, 'new'))) {
     if(fs.existsSync(path.join(__dirname, '/new', 'hello.txt'))) {
         console.log(`new dir & hello.txt already created...`);
     } else {
